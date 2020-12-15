@@ -443,7 +443,7 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="card">
-                  <div class="card-header">Mpesa</div>
+                  <div class="card-header">Flash transfer</div>
                   <div class="card-body">
                     <div class="card-title">
                       <h3 class="text-center title-2">Pay Invoice</h3>
@@ -451,12 +451,17 @@
                     <hr>
                     <form action="#" method="post" novalidate="novalidate">
                       <div class="form-group">
-                        <label for="cc-payment" class="control-label mb-1">Payment amount</label>
+                        <label for="cc-payment" class="control-label mb-1">Email/Username</label>
                         <input id="cc-pament" name="cc-payment" type="text" class="form-control" aria-required="true"
-                          aria-invalid="false" value="100.00">
+                          aria-invalid="false" value="">
+                      </div>
+                      <div class="form-group">
+                        <label for="cc-payment" class="control-label mb-1">Payment amount</label>
+                        <input id="cc-pament" name="cc-payment" type="text" class="form-control" aria-required="true" aria-invalid="false"
+                          value="">
                       </div>
                       <div class="form-group has-success">
-                        <label for="cc-name" class="control-label mb-1">Mpesa Numbermber</label>
+                        <label for="cc-name" class="control-label mb-1">reason</label>
                         <input id="cc-name" name="cc-name" type="text" class="form-control cc-name valid"
                           data-val="true" data-val-required="Please enter the name on card" autocomplete="cc-name"
                           aria-required="true" aria-invalid="false" aria-describedby="cc-name-error">
@@ -476,8 +481,8 @@
                       <div>
                         <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
                           <i class="fa fa-lock fa-lg"></i>&nbsp;
-                          <span id="payment-button-amount">Deposite</span>
-                          <span id="payment-button-sending" style="display:none;">Sending…</span>
+                          <span id="payment-button-amount">Fund</span>
+                          <span id="payment-button-sending" style="display:none;">Funding…</span>
                         </button>
                       </div>
                     </form>
@@ -492,6 +497,7 @@
                     <table class="table table-borderless table-data3">
                       <thead>
                         <tr>
+                          <th>username/email</th>
                           <th>date</th>
                           <th>Amount</th>
                           <th>Code</th>
@@ -500,6 +506,7 @@
                       </thead>
                       <tbody>
                         <tr>
+                          <td>khali.king@gmail.com</td>
                           <td>2018-09-29 05:57</td>
                           <td>4000 ksh</td>
                           <td>0H5Ftyu67c</td>
